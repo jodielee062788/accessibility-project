@@ -1,13 +1,16 @@
+/* Universal selector - apply to all elements */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Body style */
 body {
     background-color: #d9dcd6;
 }
 
+/* Header styles */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -20,11 +23,12 @@ header h1 {
     font-size: 48px;
 }
 
-header h1 .seo {
-    color: #d9dcd6;
+header h1 .highlight-seo {
+    color: #b0b7a9; /* Adjusted color for better contrast which will improve accessibility */
 }
 
-header nav {
+/* Navigations styles */
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,49 +36,79 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul {
+nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Anchor (link) styles */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Paragraph style */
 p {
     font-size: 16px;
 }
 
-.main-image {
+/* hero-image style */
+.hero-image {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    overflow: hidden; /* Ensure the image does not overflow its container */
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/* Main content container styles */
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Service class styles */
+.services section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.services img {
+    max-height: 200px;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Left alignment class */
+.align-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* Right alignment class */
+.align-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* Benefits class styles */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -91,7 +125,7 @@ main {
     color: #ffffff;
 }
 
-.benefit h3 {
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -102,6 +136,7 @@ main {
     max-width: 150px;
 }
 
+/* Footer styles */
 footer {
     padding: 30px;
     clear: both;
@@ -109,6 +144,6 @@ footer {
     text-align: center;
 }
 
-h4 {
+footer h4 {
     font-size: 20px;
 }
